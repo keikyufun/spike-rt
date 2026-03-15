@@ -237,6 +237,10 @@ class ConfigFile
   def initialize(fileName)
     @cfgFileName = fileName
     begin
+      # Ensure we open a regular file, not a directory
+      unless File.file?(@cfgFileName)
+        abort("`#{@cfgFileName}' is not a regular file")
+      end
       @cfgFile = File.open(@cfgFileName)
     rescue Errno::ENOENT, Errno::EACCES => ex
       abort(ex.message)

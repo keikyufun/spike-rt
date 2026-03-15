@@ -50,3 +50,24 @@ For English document please see [README.md](README.md).
 
 ## 言語
 IssuesやPull RequestsなどのGitHub上では，日本語と英語を受け付けます．
+
+# Improved Features (2026 Edition) by keikyufun — 日本語版
+改良点（2026年版 / keikyufun）
+このフォークには、以下の Qiita 記事を参考にした複数の改善が含まれています：
+https://qiita.com/koushiro/items/3cf4cff56e0bd90cac7a
+
+1. テンプレートファイル生成機能の追加
+新しい SPIKE‑RT プロジェクトを簡単に作成できるよう、
+テンプレートファイルを自動生成する機能を追加しました。
+
+2. シェルスクリプトの改善
+プロジェクトのセットアップやデプロイを簡単にするため、
+Qiita 記事を参考に複数のシェルスクリプトを追加・改良しました。
+（参考: https://qiita.com/koushiro/items/3cf4cff56e0bd90cac7a） (qiita.com in Bing)
+
+3. pydfu.py の Python 3.12 対応
+pydfu.py を Python 3.12 で正しく動作するように修正しました。
+
+4. deploy-dfu.sh の更新
+Python 3.12 での問題を修正し、
+DFU 書き込み処理を改善しました（PID 0011 のハブにも対応）。

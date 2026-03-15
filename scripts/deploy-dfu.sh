@@ -1,7 +1,7 @@
 #!/bin/bash -xe
 TOOL_DIR=$( cd "$( dirname "$0" )" && pwd -P )/../tools
 
-PYTHON3=${PYTHON3:-"$TOOL_DIR/python/bin/python3"}
+PYTHON3=python3
 
 MPTOP=$TOOL_DIR/../external/libpybricks/micropython
 DFU=$MPTOP/tools/dfu.py
@@ -9,7 +9,7 @@ PYDFU=$MPTOP/tools/pydfu.py
 
 TEXT0_ADDR=0x8008000
 DFU_VID=0x0694
-DFU_PID=0x0008
+DFU_PID=0x0011
 
 
 echo "DFU Create $1"

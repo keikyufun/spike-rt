@@ -2,3 +2,23 @@ tags
 
 build/
 **/build-doxygen/
+
+# LEGO firmware (do NOT upload)
+*.dfu
+*.bin
+*.elf
+*.map
+
+# Build outputs
+workspace/*/asp.bin
+workspace/*/*.bin
+
+# Python cache
+__pycache__/
+
+# VS Code settings
+.vscode/
+
+# Temporary files
+*.log
+*.tmp

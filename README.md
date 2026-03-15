@@ -47,3 +47,20 @@ See [docs/en/CONTRIBUTING.md](docs/en/CONTRIBUTING.md)
 
 ## Language
 Both English and Japanese are available on GitHub.
+
+# Improved Features (2026 Edition) by keikyufun
+This fork includes several enhancements based on the Qiita guide:
+https://qiita.com/koushiro/items/3cf4cff56e0bd90cac7a
+
+1. Template File Generator
+Added automatic template file creation for new SPIKE‑RT projects.
+
+2. Shell Script Improvements
+Added and updated shell scripts for easier project setup and deployment
+(ref: https://qiita.com/koushiro/items/3cf4cff56e0bd90cac7a)..
+
+3. Python 3.12 Compatibility for pydfu.py
+Updated pydfu.py to work correctly with Python 3.12.
+
+4. Updated deploy-dfu.sh
+Fixed Python 3.12 issues and improved DFU handling (including PID 0011 support).

@@ -404,8 +404,7 @@ end
 #  インクルードパスからファイルを探す
 #
 def SearchFilePath(fileName)
-  # Only accept regular files (not directories) to avoid opening directories by mistake
-  if File.file?(fileName)
+  if File.exist?(fileName)
     # 指定したファイルパスに存在する
     return fileName
   elsif /^\./ =~ fileName
@@ -417,7 +416,7 @@ def SearchFilePath(fileName)
     $includeDirectories.each do |includeDirectory|
       path = includeDirectory + "/" + fileName
       # 見つかったら相対パスを返す
-      if File.file?(path)
+      if File.exist?(path)
         return path
       end
     end
